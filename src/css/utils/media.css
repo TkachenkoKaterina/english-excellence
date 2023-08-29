@@ -7,7 +7,7 @@
 
 /* ================================== Desktop Style ==================================*/
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1280px) {
 }
 
 /* ********************************** Як по ДЗ ***********************************/
@@ -19,10 +19,10 @@
 
 /* ================================== Tablet Style ==================================*/
 
-@media screen and (min-width: 768px) and (max-width: 1151px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
 }
 
 /* ================================== Desktop Style ==================================*/
 
-@media screen and (min-width: 1152px) {
+@media screen and (min-width: 1280px) {
 }
