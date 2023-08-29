@@ -1,0 +1,87 @@
+/* ================================== Mobile First ==================================*/
+
+.footer-section {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: var(--black);
+}
+
+.footer-logo-english {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.footer-logo-excellence {
+  color: var(--green);
+}
+
+.footer-address-name {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.02em;
+}
+
+.footer-address-link {
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.29; /* 128.571% */
+}
+
+.footer-nav-item-link {
+  color: var(--white);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.29; /* 128.571% */
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-list-link {
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.privacy-policy-info,
+.privacy-policy-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29; /* 128.571% */
+  letter-spacing: -0.02em;
+}
+
+/* ================================== Tablet Style ==================================*/
+
+@media screen and (min-width: 768px) {
+  .footer-section {
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  .footer-social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ================================== Desktop Style ==================================*/
+
+@media screen and (min-width: 1152px) {
+  .footer-section {
+    padding-top: 64px;
+    padding-bottom: 23px;
+  }
+}
