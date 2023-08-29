@@ -108,7 +108,7 @@
 .submit__left-side {
   max-width: 492px;
 
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1279px) {
     display: none;
   }
 }
@@ -170,7 +170,7 @@
 }
 
 .form__radio {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 40px;
   }
 
