@@ -120,7 +120,6 @@
   .footer-container {
     display: flex;
     flex-direction: column;
-    max-height: 312px;
   }
 
   .footer-container-up {
@@ -163,5 +162,13 @@
   .footer-section {
     padding-top: 64px;
     padding-bottom: 23px;
+  }
+
+  .footer-container-up {
+    height: 298px;
+  }
+
+  .privacy-policy {
+    padding-top: 23px;
   }
 }
