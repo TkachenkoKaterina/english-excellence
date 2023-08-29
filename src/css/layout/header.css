@@ -109,7 +109,7 @@
 }
 
 .burger-menu-icon {
-  stroke: var(--main-cl-black);
+  stroke: var(--black);
 }
 
 @media screen and (min-width: 768px) {
