@@ -37,13 +37,8 @@
   gap: 16px;
 }
 
-.footer-address-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
 .footer-address-name {
+  padding-bottom: 4px;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
@@ -53,6 +48,7 @@
 }
 
 .footer-address-link {
+  display: block;
   color: var(--white);
   font-size: 14px;
   font-style: normal;
@@ -83,6 +79,23 @@
   padding: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-icon {
+  fill: var(--white);
+  transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-list-link:hover {
+  border-color: rgba(77, 194, 116, 0.1);
+}
+
+.footer-social-list-link:hover > .footer-social-icon {
+  fill: var(--green);
 }
 
 .privacy-policy {
@@ -106,6 +119,21 @@
   font-weight: 400;
   line-height: 1.29; /* 128.571% */
   letter-spacing: -0.02em;
+}
+
+.footer-nav-item {
+  position: relative;
+}
+
+.footer-nav-item-link:hover::after {
+  content: '';
+  display: block;
+  width: 37px;
+  height: 2px;
+  background-color: var(--green);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
 }
 
 /* ================================== Tablet Style ==================================*/
