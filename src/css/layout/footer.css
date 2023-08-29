@@ -24,7 +24,7 @@
 
 .footer-nav {
   margin-top: 40px;
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .footer-social {
@@ -114,11 +114,46 @@
   .footer-section {
     padding-top: 32px;
     padding-bottom: 16px;
+    background-color: var(--black);
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 312px;
+  }
+
+  .footer-container-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 312px;
   }
 
   .footer-social-icon {
     width: 28px;
     height: 28px;
+  }
+
+  .footer-address {
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .privacy-policy {
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 16px;
+    padding-bottom: 0px;
   }
 }
 
