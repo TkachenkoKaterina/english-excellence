@@ -1,11 +1,105 @@
 /* ================================== Mobile First ==================================*/
+.hero-section {
+  padding-top: 8px;
+}
+
+.hero-bg-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 72px 20px;
+  width: 100%;
+  height: 709px;
+  background-color: var(--secondary-dark-color);
+  background: linear-gradient(
+      57deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../../img/hero-img/hero-mob.png),
+    lightgray -566px -29.886px / 332.537% 104.761% no-repeat;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+
+  /* background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../../img/hero-img/hero-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+
+.hero-title {
+  padding-bottom: 40px;
+  color: var(--white);
+  font-family: Manrope;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.05; /* 105.263% */
+}
+
+.hero-title-span {
+  color: #bee8cc;
+  font-family: Manrope;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.hero-link-application {
+  max-width: 295px;
+  padding: 14px 64px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--green);
+  border-radius: 12px;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.71; /* 171.429% */
+  color: var(--white);
+}
+
+.hero-link-footer {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.hero-icon-arrow {
+  width: 20px;
+  height: 20px;
+  fill: var(--green);
+}
 
 /* ================================== Tablet Style ==================================*/
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 32px;
+  }
 }
 
 /* ================================== Desktop Style ==================================*/
 
 @media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 16px;
+  }
 }
