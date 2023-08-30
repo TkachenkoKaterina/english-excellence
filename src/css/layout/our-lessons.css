@@ -1,0 +1,206 @@
+/**------------------------------------ Lesson------------------------------------- **/
+
+/* ================================== Mobile First ==================================*/
+
+.lessons-head {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.13;
+    letter-spacing: -0.64px;
+    margin-bottom: 16px;
+}
+
+.lessons-text {
+    max-width: 335px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--black-transparrent-3);
+    margin-bottom: 40px;
+}
+
+.lessons-list {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.lessons-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.lessons-list-container {
+    max-width: 336px;
+    min-height: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    padding: 40px 20px;
+}
+
+.lessons-list-item:nth-child(odd) .lessons-list-container {
+    border: 1px solid var(--green);
+    background: var(--white);
+}
+
+.lessons-list-item:nth-last-child(even) .lessons-list-container {
+    border: none;
+    background: var(--green);
+}
+
+.lessons-h {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    margin-bottom: 16px;
+}
+
+.lessons-list-item:nth-child(odd) .lessons-h {
+    color: var(--black);
+}
+
+.lessons-list-item:nth-last-child(even) .lessons-h {
+    color: var(--white);
+}
+
+.lessons-price {
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.13;
+    font-weight: 700;
+    letter-spacing: -0.64px;
+    margin-bottom: 40px;
+}
+
+.lessons-list-item:nth-child(odd) .lessons-price {
+    color: var(--black);
+}
+
+.lessons-list-item:nth-last-child(even) .lessons-price {
+    color: var(--white);
+}
+
+.lessons-p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.lessons-list-item:nth-child(odd) .lessons-p {
+    color: var(--black-transparrent-3);
+}
+
+.lessons-list-item:nth-last-child(even) .lessons-p {
+    color: var(--white-transparrent-1);
+}
+
+.lessons-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 78px;
+    border-radius: 12px;
+    background: var(--green);
+
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white);
+}
+
+.lessons-list-item:nth-child(odd) .lessons-btn {
+    border: none;
+}
+
+.lessons-list-item:nth-last-child(even) .lessons-btn {
+    border: 1px solid var(--white-transparrent-2);
+}
+
+
+/* ================================== Tablet Style ==================================*/
+
+@media screen and (min-width: 768px) {
+    .lessons-head {
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -0.8px;
+    }
+
+    .lessons-text {
+        max-width: 665px;
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 64px;
+    }
+
+    .lessons-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 32px;
+    }
+
+    .lessons-list-item {
+        flex-basis: calc((100% - 32px) / 2);
+    }
+
+    .lessons-list-item:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
+    .lessons-list-container {
+        width: 336px;
+        height: 404px;
+        border-radius: 30px;
+        padding: 32px 16px;
+    }
+
+    .lessons-h {
+        font-size: 20px;
+    }
+
+    .lessons-price {
+        font-size: 32px;
+        line-height: 1.4;
+        margin-bottom: 32px;
+    }
+
+    .lessons-p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+    }
+
+    .lessons-btn {
+        padding: 16px 63px;
+        font-size: 18px;
+        line-height: 1.55;
+    }
+}
+
+/* ================================== Desktop Style ==================================*/
+
+@media screen and (min-width: 1280px) {
+    .lessons-list-item {
+        flex-basis: calc((100% - 64px) / 3);
+    }
+
+    .lessons-list-container {
+        width: 320px;
+        padding: 32px;
+    }
+
+    .lessons-price {
+        margin-bottom: 16px;
+    }
+
+    .lessons-btn {
+        padding: 16px 39px;
+    }
+}
