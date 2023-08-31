@@ -19,9 +19,9 @@
       rgba(0, 0, 0, 0) 100%
     ),
     url(../../img/hero-img/hero-mob.png),
-    lightgray -566px -29.886px / 332.537% 104.761% no-repeat;
-  border-radius: 16px;
+    lightgray -566px -29.886px / 332.537% 104.761%;
   background-repeat: no-repeat;
+  border-radius: 16px;
 
   /* background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -36,18 +36,16 @@
 .hero-title {
   padding-bottom: 40px;
   color: var(--white);
-  font-family: Manrope;
   font-size: 38px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   line-height: 1.05; /* 105.263% */
 }
 
 .hero-title-span {
-  color: #bee8cc;
-  font-family: Manrope;
+  color: var(--sun-light-green);
   font-size: 38px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   line-height: 1.05;
 }
@@ -61,7 +59,6 @@
   align-items: center;
   background: var(--green);
   border-radius: 12px;
-  font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
