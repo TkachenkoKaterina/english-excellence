@@ -1,9 +1,3 @@
-.reviews-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .heading {
     color: var(--black);
     text-align: center;
@@ -13,7 +7,7 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -0.64px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 
 .under-heading {
@@ -24,37 +18,37 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    width: 335px;
-    margin: 16px 0px 40px;
+    margin-bottom: 40px;
 }
 
-.reviews-list {
+/*.reviews-list {
     display: flex;
     justify-content: center;
     margin: 0;
     gap: 32px;
     padding: 0;
-}
+}*/
 
 .review-card {
-    width: 335px;
-    height: 278px;
     border-radius: 16px;
     flex-shrink: 0;
     background-color: var(--gray);
+    padding: 20px 20px 0px;
 }
 
 .student {
-    width: 295px;
     height: 78px;
     border-radius: 8px;
     flex-shrink: 0;
     flex-wrap: wrap;
     background-color: var(--green);
+    padding: 14px 18px;
+    gap: 8px;
+    margin-bottom: 20px;
     display: flex;
-    margin-left: 20px;
-    margin-top: 20px;
+    align-items: center; 
 }
+
 
 .student-name {
     color: var(--white);
@@ -64,7 +58,7 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.4px;
-    margin: 18px 0px 0px;
+    margin: 4px 0px 0px;
 }
 
 .supporting-text {
@@ -74,7 +68,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    margin: 0px;
 }
 
 .student-cell {
@@ -82,27 +75,22 @@
 }
 
 .review-photo {
-    margin: 14px 8px 14px 14px;
     width: 50px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 50px;
 }
 
-.supporting-list {
-    padding: 0px;
-}
-
 .review-text {
+    padding-left: 14px;
+    padding-right: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .text {
-    margin-top: 20px;
     margin-bottom: 40px;
-    max-width: 267px;
     color: var(--black-transparrent-3);
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
@@ -125,6 +113,7 @@
 /* ============ Tablet Style ============ */
 
 @media screen and (min-width: 768px) {
+    
     .heading {
         font-size: 40px;
         line-height: 48px;
@@ -134,19 +123,18 @@
     .under-heading {
         font-size: 18px;
         line-height: 30px;
-        width: 647px;
     }
 
     .review-card {
-        width: 336px;
-        height: 326px;
+        max-width: 336px;
+        padding: 32px 16px 0px;
         border-radius: 30px;
     }
 
     .student {
-        margin: 32px 16px 0;
-        width: 304px;
+        padding: 16px 18px;
         border-radius: 15px;
+        margin-bottom: 32px;
     }
 
     .reviews-list {
@@ -155,13 +143,12 @@
         gap: 32px;
     }
 
-    .review-photo {
-        margin: 14px 8px 14px 16px;
+    .review-text {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     .text {
-        margin-top: 32px;
-        width: 272px;
         font-size: 16px;
     }
 
@@ -185,20 +172,12 @@
     }
 
     .review-card {
-        width: 320px;
-        height: 326px;
+        max-width: 320px;
         border-radius: 30px;
     }
 
     .student {
-        margin: 32px 16px 0;
-        width: 288px;
         border-radius: 15px;
-    }
-
-    .text {
-        width: 256px;
-        font-size: 16px;
     }
 
     .mobile-hidden {
