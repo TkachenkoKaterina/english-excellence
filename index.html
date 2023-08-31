@@ -17,16 +17,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- styles.css -->
     
-    <script type="module" crossorigin src="/english-excellence/assets/index-c8b3a236.js"></script>
-    <link rel="stylesheet" href="/english-excellence/assets/index-6f617fcb.css">
+    <script type="module" crossorigin src="/english-excellence/assets/main-e8f63a72.js"></script>
+    <link rel="stylesheet" href="/english-excellence/assets/main-f8ce7964.css">
   </head>
   <body>
     <header class="page-header">
   <div class="page-header-container container">
     <nav class="page-header-nav">
-      <a href="" class="header-logo link"
+      <a href="index.html" class="header-logo link"
         >english<span class="header-logo-excellence">excellence</span>.</a
       >
       <ul class="header-nav-list list">
@@ -439,7 +441,7 @@
 
     <section id="leave-an-application" class="submit section">
   <div class="submit__container container">
-    <h2 class="submit__title title">
+    <h2 data-aos="zoom-in" data-aos-duration="500" class="submit__title title">
       Leave an <span class="title__mod">application</span>
     </h2>
     <h3 class="submit__subtitle subtitle">
@@ -448,7 +450,11 @@
     </h3>
     <div class="submit__content">
       <div class="submit__left-side left-side">
-        <div class="left-side__img">
+        <div
+          data-aos="fade-down"
+          data-aos-duration="500"
+          class="left-side__img"
+        >
           <picture>
             <source
               srcset="/english-excellence/assets/image_1@x1-a29f5c70.webp 1x, /english-excellence/assets/image_1@x2-6dcedfc6.webp 2x"
@@ -576,8 +582,12 @@
         </form>
         <p class="right-side__text">
           By clicking on “Send” button, you agree to our
-          <span class="right-side__text-mod">Privacy Policy</span>, and allow
-          Promodo to use this information for marketing purposes.
+          <a href="privacy-policy.html" class="styled-link">Privacy Policy</a>
+          and our
+          <a href="terms-of-service.html" class="styled-link"
+            >Terms of Service</a
+          >. You also allow Promodo to use this information for marketing
+          purposes.
         </p>
       </div>
     </div>
@@ -589,7 +599,7 @@
   <div class="footer-container container">
     <div class="footer-container-up">
       <div class="footer-container-first-block">
-        <a href="" class="footer-logo-english link"
+        <a href="index.html" class="footer-logo-english link"
           >english<span class="footer-logo-excellence">excellence</span>.</a
         >
 
@@ -730,5 +740,9 @@
       crossorigin="anonymous"
     ></script>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
