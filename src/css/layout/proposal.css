@@ -48,6 +48,7 @@
     border-radius: 12px;
     color: var(--white);
     background: var(--green);
+    text-decoration: none;
     transition: background-color 0.3s ease-in-out;
 }
 
