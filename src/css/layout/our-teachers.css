@@ -1,40 +1,18 @@
-.teachers {
-  padding-bottom: 80px;
-}
-
-@media screen and (min-width: 768px) {
-  .teachers {
-    padding-bottom: 100px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .teachers {
-    padding-bottom: 150px;
-  }
-}
-
-.title__mod {
+.title-underline {
   position: relative;
 }
 
-.title__mod::after {
+.title-underline::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 2px;
+  bottom: 3px;
   z-index: -1;
   display: block;
   width: 100%;
   height: 20px;
-  background-color: var(--green-linear);
+  background-color: var(--sun-light-green);
   border-radius: 8px;
-}
-
-@media screen and (max-width: 768px) {
-  .title__mod::after {
-    background-color: transparent;
-  }
 }
 
 .teachers-title {
@@ -52,7 +30,6 @@
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: -0.8px;
-    margin-bottom: 64px;
   }
 }
 
@@ -62,6 +39,7 @@
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -108,22 +86,19 @@
 
 @media screen and (min-width: 768px) {
   .teachers-item {
-    width: calc((100%-32px) / 2);
+    width: 272px;
+    height: 318px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .teachers-item {
     width: calc((100%-72px) / 4);
+    width: 232px;
   }
 }
 .teachers-image {
-  object-position: center;
   border-radius: 500px;
-}
-
-.teachers-wrapper {
-  margin-top: 16px;
 }
 
 .teachers-specialist {
@@ -137,9 +112,15 @@
 }
 
 .teachers-job-title {
-  color: var(--black-transparrent-3);
+  color: var(--black-transparrent-3));
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .teachers-job-title {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
