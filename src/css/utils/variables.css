@@ -14,4 +14,6 @@
   --black-transparrent-3: rgba(18, 20, 23, 0.5);
   --white-transparrent-1: rgba(255, 255, 255, 0.7);
   --white-transparrent-2: rgba(255, 255, 255, 0.4);
+
+  --transition: 0.3s ease-in-out;
 }
