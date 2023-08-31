@@ -30,7 +30,7 @@
     /* font-size: 38px;
     font-weight: 700;
     line-height: 40px; */
-    color: #bee8cc;
+    color: var(--sun-light-green);
 }
 
 .proposal-btn {
