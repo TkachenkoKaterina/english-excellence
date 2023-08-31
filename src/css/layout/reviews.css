@@ -13,7 +13,6 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: -0.64px;
-    margin-top: 80px;
     margin-bottom: 0px;
 }
 
@@ -83,7 +82,7 @@
 }
 
 .review-photo {
-    padding: 14px 14px;
+    margin: 14px 8px 14px 14px;
     width: 50px;
     height: 50px;
     flex-shrink: 0;
@@ -145,7 +144,7 @@
     }
 
     .student {
-        padding: 14px 16px;
+        margin: 32px 16px 0;
         width: 304px;
         border-radius: 15px;
     }
@@ -154,6 +153,10 @@
         display: flex;
         justify-content: center;
         gap: 32px;
+    }
+
+    .review-photo {
+        margin: 14px 8px 14px 16px;
     }
 
     .text {
@@ -188,7 +191,7 @@
     }
 
     .student {
-        padding: 14px 16px;
+        margin: 32px 16px 0;
         width: 288px;
         border-radius: 15px;
     }
