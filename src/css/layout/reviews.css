@@ -11,6 +11,7 @@
 }
 
 .under-heading {
+    max-width: 334px;
     color: var(--black-transparrent-3);
     text-align: center;
     font-family: 'Manrope', sans-serif;
@@ -18,16 +19,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
-
-/*.reviews-list {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    gap: 32px;
-    padding: 0;
-}*/
 
 .review-card {
     border-radius: 16px;
@@ -121,6 +115,7 @@
     }
 
     .under-heading {
+        max-width: 647px;
         font-size: 18px;
         line-height: 30px;
     }
