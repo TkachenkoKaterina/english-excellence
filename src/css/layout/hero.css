@@ -27,7 +27,7 @@
 }
 
 .hero-title {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   color: var(--white);
   font-size: 38px;
   /* font-style: normal; */
@@ -44,19 +44,22 @@
 }
 
 .hero-link-application {
-  max-width: 295px;
-  padding: 14px 64px;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  /* padding: 14px 64px; */
   height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--green);
-  border-radius: 12px;
+  text-align: center;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.71; /* 171.429% */
   color: var(--white);
+  background-color: var(--green);
+  border-radius: 12px;
   transition: background-color var(--transition);
 }
 
@@ -156,6 +159,41 @@
 
     background-repeat: no-repeat;
   }
+
+  .hero-title {
+    margin-bottom: 32px;
+    width: 488px;
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .hero-title-span {
+    font-size: 60px;
+    line-height: 1.17;
+  }
+
+  .hero-link-application {
+    width: 306px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .hero-link-footer {
+    right: 26px;
+    bottom: 26px;
+    width: 59px;
+    height: 59px;
+  }
+
+  .hero-link-circle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-icon-arrow {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* 2x photo tablet background */
@@ -199,6 +237,10 @@
       lightgray -256px -12.887px / 186.364% 102.074%;
 
     background-repeat: no-repeat;
+  }
+
+  .hero-title {
+    width: 564px;
   }
 }
 
