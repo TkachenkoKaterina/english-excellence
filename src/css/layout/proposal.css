@@ -1,24 +1,35 @@
+.proposal-section {
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
 .proposal {
-    min-width: 100%;
-    height: auto;
+    /* min-width: 100%; */
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 40px 20px 64px 20px;
+    /* border-radius: 30px; */
+    border-radius: 16px;
+    background: var(--green-linear);
     overflow: hidden;
-    border-radius: 30px;
-    background: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+    /* height: auto; */
+    z-index: -5
 }
 
 .proposal-header {
     margin-bottom: 65px;
-    color: #fff;
+    color: var(--white);
     font-size: 38px;
     font-weight: 700;
-    line-height: 40px;
+    /* line-height: 40px; */
+    line-height: 1.05;
 }
 
 .language-color {
-    font-size: 38px;
+    /* font-size: 38px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 40px; */
     color: #bee8cc;
 }
 
@@ -26,29 +37,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 255px;
+    /* min-width: 255px; */
     padding: 14px 0;
-    font-family: Manrope;
+    /* font-family: Manrope; */
     font-size: 14px;
     font-weight: 700;
-    line-height: 24px;
+    /* line-height: 24px; */
+    line-height: 1.71;
     border: none;
     border-radius: 12px;
-    color: #fff;
-    background: #4dc274;
+    color: var(--white);
+    background: var(--green);
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
 }
 
+.proposal-btn:hover,
+.proposal-btn:focus {
+    background-color: var(--accent);
+}
+
+/* */
 .proposal-cards {
     position: relative;
+    z-index: 1;
 }
 
-.first-card {
+/* .first-card {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    min-width: 100%;
-    height: 408px;
+    width: 100%;
+    height: 100%;
     transform: rotate(11deg);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.5);
@@ -60,33 +81,64 @@
     left: 0;
     z-index: 2;
     min-width: 100%;
-    height: 408px;
-    transform: rotate(-8deg);
+    height: 100%;
+    transform: rotate(-9deg);
     border-radius: 16px;
     background: #d4fde1;
-}
+} */
 
 .visible-card {
-    position: relative;
+    /* position: relative;
     z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 100%;
-    height: 408px;
+    height: 100%; */
     padding: 40px 20px;
     border-radius: 16px;
-    background-color: #fff;
+    background: var(--white);
+}
+
+.visible-card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+    transform: rotate(11deg);
+    background: var(--white);
+    opacity: 50%;
+    z-index: -1;
+    
+}
+
+.visible-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    top: 0;
+    left: 0;
+    transform: rotate(-9deg);
+    background: var(--light-green);
+    z-index: -1;
+
 }
 
 .proposal-title {
     align-self: flex-start;
     margin-bottom: 20px;
-    color: #121417;
+    color: var(--black);
     font-size: 20px;
     font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.4px;
+    /* line-height: 24px; */
+    line-height: 1.2;
+    /* letter-spacing: -0.4px; */
+    letter-spacing: -0.02em;
 }
 
 .proposal-list {
@@ -99,21 +151,153 @@
     align-items: center;
 }
 
+.proposal-item::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    background-color: var(--green);
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-image: url(../img/sprite.svg#icon-check);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
 .proposal-item:not(:last-of-type) {
     margin-bottom: 16px;
 }
 
-.icon-check {
+/* .icon-check {
     z-index: 9;
     width: 20px;
     height: 20px;
-}
+} */
 
 .proposal-description {
-    color: #121417;
+    color: var(--black);
     width: 227px;
     font-size: 14px;
     font-weight: 700;
-    line-height: 20px;
-    letter-spacing: -0.28px;
+    /* line-height: 20px; */
+    line-height: 1.43;
+    /* letter-spacing: -0.28px; */
+    letter-spacing: -0.02em;
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+    .proposal-section {
+        min-width: 704px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .proposal {
+        min-width: 704px;
+        padding: 64px 18px 92px 18px;
+        border-radius: 30px;
+    }
+
+    .proposal-header {
+        font-size: 60px;
+        line-height: 1.17;
+        margin-bottom: 84px;
+    }
+
+    .proposal-title {
+        margin-bottom: 32px;
+        font-size: 40px;
+        letter-spacing: -0.02em;
+    }
+
+    .proposal-list {
+        margin-bottom: 32px
+    }
+
+    .proposal-item {
+        gap: 16px;
+    }
+
+    .proposal-description {
+        width: 448px;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+    }
+
+    .proposal-btn {
+        display: inline-flex;
+        padding: 16px 64px;
+        font-size: 18px;
+        line-height: 1.56;
+    }
+
+    .visible-card {
+        border-radius: 30px;
+        padding: 64px 32px;
+        background-image: url(../img/proposal/books.png);
+        background-position: 503px 173px;
+        background-size: 214px 263px;
+        background-repeat: no-repeat;
+    }
+    
+    .visible-card::before {
+        border-radius: 30px;
+        transform: rotate(-10.65deg);
+    }
+    
+    .visible-card::after {
+        border-radius: 30px;
+        transform: rotate(9.86deg);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .proposal-section {
+            min-width: 1152px;
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+    
+        .proposal {
+            min-width: 1152px;
+            padding: 64px 64px 141px 64px;
+            /* border-radius: 30px; */
+        }
+    
+        .proposal-header {
+            max-width: 776px;
+            margin-bottom: 133px;
+        }
+    
+        .proposal-title {
+            margin-bottom: 40px;
+        }
+    
+        .proposal-list {
+            margin-bottom: 39px
+        }
+    
+        .proposal-description {
+            width: 654px;
+        }
+
+        .visible-card {
+            padding-left: 64px;
+            padding-right: 64px;
+            background-position: 810px 128px;
+        }
+
+        .visible-card::before {
+            border-radius: 30px;
+            transform: rotate(-11deg);
+        }
+
+        .visible-card::after {
+            border-radius: 30px;
+            transform: rotate(8deg);
+        }
 }
