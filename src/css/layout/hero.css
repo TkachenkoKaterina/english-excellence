@@ -36,8 +36,10 @@
         rgba(0, 0, 0, 0.4) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url('../../img/hero-img/hero-mob.jpg'),
+      url('../../img/hero-img/hero-mob@2x.jpg'),
       lightgray -566px -29.886px / 332.537% 104.761%;
+    /* background-position: center; */
+    background-size: cover;
   }
 }
 
@@ -72,6 +74,7 @@
   font-weight: 700;
   line-height: 1.71; /* 171.429% */
   color: var(--white);
+  transition: background-color var(--transition);
 }
 
 .hero-link-application:hover,
@@ -87,7 +90,9 @@
   height: 49px;
   background-color: transparent;
   border-radius: 50%;
+  transition: background-color var(--transition);
 }
+
 .hero-link-circle {
   position: absolute;
   right: 6px;
@@ -99,12 +104,14 @@
   align-items: center;
   background-color: var(--white);
   border-radius: 50%;
+  transition: background-color var(--transition);
 }
 
 .hero-icon-arrow {
   width: 20px;
   height: 20px;
   fill: var(--green);
+  transition: fill var(--transition);
 }
 
 .hero-link-footer:hover,
