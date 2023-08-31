@@ -30,7 +30,7 @@
     /* font-size: 38px;
     font-weight: 700;
     line-height: 40px; */
-    color: #bee8cc;
+    color: var(--sun-light-green);
 }
 
 .proposal-btn {
@@ -148,7 +148,7 @@
 .proposal-item {
     display: flex;
     gap: 8px;
-    align-items: center;
+    align-items: center;   
 }
 
 .proposal-item::before {
@@ -160,7 +160,7 @@
     justify-content: center;
     flex-shrink: 0;
     border-radius: 50%;
-    background-image: url(../img/sprite.svg#icon-check);
+    background-image: url(../img/proposal/icon.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: 20px;
@@ -252,6 +252,14 @@
     .visible-card::after {
         border-radius: 30px;
         transform: rotate(9.86deg);
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .visible-card {
+        background-image: url(../img/proposal/books@2x.png);
     }
 }
 
