@@ -12,25 +12,33 @@
   padding: 72px 20px;
   width: 100%;
   height: 709px;
-  background-color: var(--secondary-dark-color);
   background: linear-gradient(
       57deg,
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url(../../img/hero-img/hero-mob.png),
+    url('../../img/hero-img/hero-mob.jpg'),
     lightgray -566px -29.886px / 332.537% 104.761%;
   background-repeat: no-repeat;
   border-radius: 16px;
 
-  /* background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../../img/hero-img/hero-mob.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center;
   background-size: cover; */
+}
+
+/* 2x photo mobile background */
+@media screen and (min-resolution: 192dpi) and (max-width: 767.8px),
+  screen and (min-resolution: 2dppx) and (max-width: 767.8px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767.8px) {
+  .hero-bg-container {
+    background: linear-gradient(
+        57deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../../img/hero-img/hero-mob.jpg'),
+      lightgray -566px -29.886px / 332.537% 104.761%;
+  }
 }
 
 .hero-title {
@@ -57,7 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--green);
+  background-color: var(--green);
   border-radius: 12px;
   font-size: 14px;
   font-style: normal;
@@ -66,10 +74,24 @@
   color: var(--white);
 }
 
+.hero-link-application:hover,
+.hero-link-application:active {
+  background-color: var(--accent);
+}
+
 .hero-link-footer {
   position: absolute;
-  right: 14px;
-  bottom: 14px;
+  right: 8px;
+  bottom: 8px;
+  width: 49px;
+  height: 49px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.hero-link-circle {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
   width: 38px;
   height: 38px;
   display: flex;
@@ -85,11 +107,31 @@
   fill: var(--green);
 }
 
+.hero-link-footer:hover,
+.hero-link-footer:focus {
+  background-color: var(--green);
+}
+
+.hero-link-footer:active {
+  background-color: transparent;
+}
+
+.hero-link-footer:active .hero-link-circle {
+  background-color: var(--green);
+}
+
+.hero-link-footer:active .hero-icon-arrow {
+  fill: var(--white);
+}
+
 /* ================================== Tablet Style ==================================*/
 
 @media screen and (min-width: 768px) {
   .hero-section {
     padding-top: 32px;
+  }
+
+  .hero-bg-container {
   }
 }
 
@@ -98,5 +140,8 @@
 @media screen and (min-width: 1280px) {
   .hero-section {
     padding-top: 16px;
+  }
+
+  .hero-bg-container {
   }
 }
