@@ -102,9 +102,9 @@
 }
 
 .lessons-btn {
-    display: inline-flex;
+    /* display: inline-flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 14px 77px;
     border-radius: 12px;
 }
