@@ -102,7 +102,9 @@
 }
 
 .lessons-btn {
-    padding: 14px 77px;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
     border-radius: 12px;
     border: none;
     background-color: var(--green);
@@ -150,7 +152,7 @@
     z-index: -1;
     display: block;
     width: 100%;
-    height: 20px;
+    height: 12px;
     background-color: var(--light-green);
     border-radius: 8px;
 }
@@ -209,7 +211,8 @@
     }
 
     .lessons-btn {
-        padding: 16px 62px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         font-size: 18px;
         line-height: 1.55;
     }
@@ -217,6 +220,10 @@
     .lessons-btn-a {
         font-size: 18px;
         line-height: 1.56;
+    }
+
+    .head_mod::after {
+        height: 16px;
     }
 }
 
@@ -237,6 +244,11 @@
     }
 
     .lessons-btn {
-        padding: 16px 38px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .head_mod::after {
+        height: 20px;
     }
 }
