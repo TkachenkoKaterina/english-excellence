@@ -10,6 +10,35 @@
     margin-bottom: 16px;
 }
 
+.title-underline {
+    position: relative;
+}
+
+.title-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 12px;
+    background-color: var(--light-green);
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .title-underline::after {
+        height: 16px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .title-underline::after {
+        height: 20px;
+    }
+}
+
 .lessons-text {
     max-width: 335px;
     margin: 0 auto;
@@ -102,7 +131,9 @@
 }
 
 .lessons-btn {
-    padding: 14px 77px;
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
     border-radius: 12px;
     border: none;
     background-color: var(--green);
@@ -136,23 +167,6 @@
 .lessons-list-item:nth-child(even):hover .lessons-btn-a,
 .lessons-list-item:nth-child(even):focus .lessons-btn-a {
     color: var(--green);
-}
-
-.head_mod {
-    position: relative;
-}
-
-.head_mod::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    z-index: -1;
-    display: block;
-    width: 100%;
-    height: 20px;
-    background-color: var(--light-green);
-    border-radius: 8px;
 }
 
 /* ================================== Tablet Style ==================================*/
@@ -209,7 +223,8 @@
     }
 
     .lessons-btn {
-        padding: 16px 62px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         font-size: 18px;
         line-height: 1.55;
     }
@@ -218,6 +233,10 @@
         font-size: 18px;
         line-height: 1.56;
     }
+
+    /* .head_mod::after {
+        height: 16px;
+    } */
 }
 
 /* ================================== Desktop Style ==================================*/
@@ -237,6 +256,11 @@
     }
 
     .lessons-btn {
-        padding: 16px 38px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
+
+    /* .head_mod::after {
+        height: 20px;
+    } */
 }
