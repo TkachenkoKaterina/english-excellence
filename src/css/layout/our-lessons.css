@@ -105,21 +105,50 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 14px 78px;
+    padding: 14px 77px;
     border-radius: 12px;
-    background: var(--green);
+}
 
+.lessons-btn-a {
+    text-align: center;
     font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 1.71;
-    color: var(--white);
 }
 
 .lessons-list-item:nth-child(odd) .lessons-btn {
     border: none;
+    background-color: var(--green);
 }
 
-.lessons-list-item:nth-last-child(even) .lessons-btn {
+.lessons-list-item:nth-child(odd):hover .lessons-btn,
+.lessons-list-item:nth-child(odd):focus .lessons-btn {
+    background-color: var(--accent);
+}
+
+.lessons-list-item:nth-child(even) .lessons-btn {
     border: 1px solid var(--white-transparrent-2);
+    background-color: var(--green);
+}
+
+.lessons-list-item:nth-child(even):hover .lessons-btn,
+.lessons-list-item:nth-child(even):focus .lessons-btn {
+    background-color: var(--white);
+}
+
+.lessons-list-item .lessons-btn-a {
+    color: var(--white);
+}
+
+.lessons-list-item:nth-child(odd):hover .lessons-btn-a,
+.lessons-list-item:nth-child(odd):focus .lessons-btn-a {
+    color: var(--white);
+}
+
+.lessons-list-item:nth-child(even):hover .lessons-btn-a,
+.lessons-list-item:nth-child(even):focus .lessons-btn-a {
+    color: var(--green);
 }
 
 .head_mod {
@@ -193,9 +222,14 @@
     }
 
     .lessons-btn {
-        padding: 16px 63px;
+        padding: 16px 62px;
         font-size: 18px;
         line-height: 1.55;
+    }
+
+    .lessons-btn-a {
+        font-size: 18px;
+        line-height: 1.56;
     }
 }
 
@@ -216,6 +250,6 @@
     }
 
     .lessons-btn {
-        padding: 16px 39px;
+        padding: 16px 38px;
     }
 }
