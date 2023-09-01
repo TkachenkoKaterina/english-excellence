@@ -102,24 +102,20 @@
 }
 
 .lessons-btn {
-    /* display: inline-flex;
-    justify-content: center;
-    align-items: center; */
     padding: 14px 77px;
     border-radius: 12px;
+    border: none;
+    background-color: var(--green);
+    transition: background-color var(--transition);
 }
 
 .lessons-btn-a {
     text-align: center;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 1.71;
-}
-
-.lessons-list-item:nth-child(odd) .lessons-btn {
-    border: none;
-    background-color: var(--green);
+    color: var(--white);
+    transition: color var(--transition);
 }
 
 .lessons-list-item:nth-child(odd):hover .lessons-btn,
@@ -135,15 +131,6 @@
 .lessons-list-item:nth-child(even):hover .lessons-btn,
 .lessons-list-item:nth-child(even):focus .lessons-btn {
     background-color: var(--white);
-}
-
-.lessons-list-item .lessons-btn-a {
-    color: var(--white);
-}
-
-.lessons-list-item:nth-child(odd):hover .lessons-btn-a,
-.lessons-list-item:nth-child(odd):focus .lessons-btn-a {
-    color: var(--white);
 }
 
 .lessons-list-item:nth-child(even):hover .lessons-btn-a,
