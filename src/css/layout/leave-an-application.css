@@ -43,6 +43,7 @@
   color: var(--black-transparrent-3);
   text-align: center;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   display: block;
   max-width: 709px;
