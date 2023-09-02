@@ -1,7 +1,5 @@
 /**------------------------------------ Lesson------------------------------------- **/
-body {
-    scroll-behavior: smooth;
-}
+
 /* ================================== Mobile First ==================================*/
 
 .lessons-head {
@@ -167,8 +165,8 @@ body {
     background-color: var(--white);
 }
 
-.lessons-list-item:nth-child(even) .lessons-a:hover,
-.lessons-list-item:nth-child(even) .lessons-a:focus {
+.lessons-list-item:nth-child(even) .lessons-div:hover .lessons-a,
+.lessons-list-item:nth-child(even) .lessons-div:focus .lessons-a {
     color: var(--green);
 }
 
