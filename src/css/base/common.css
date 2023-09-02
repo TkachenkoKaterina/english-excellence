@@ -21,3 +21,7 @@ body {
   height: 2px;
   background-color: var(--green);
 }
+
+html {
+  scroll-behavior: smooth;
+}
