@@ -62,6 +62,7 @@
   border: 0px;
   border-radius: 12px;
   background: var(--green);
+  outline: none;
   color: var(--white);
   font-size: 18px;
   font-weight: 700;
@@ -161,9 +162,14 @@
   border: 1px solid var(--black-transparrent-1);
   padding: 16px 18px;
   line-height: 1.5;
+  outline: none;
 }
 
-.input:valid {
+.input:focus {
+  border-color: var(--sun-light-green);
+}
+
+.input:not(:placeholder-shown):valid {
   border-color: var(--green);
 }
 
