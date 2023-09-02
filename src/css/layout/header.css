@@ -43,6 +43,18 @@
   transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-nav-list-link::after {
+  display: block;
+  width: 37px;
+  height: 2px;
+  background-color: transparent;
+  content: '';
+  position: absolute;
+  bottom: 29px;
+  left: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-nav-list-link:hover::after {
   display: block;
   width: 37px;
