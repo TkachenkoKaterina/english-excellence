@@ -23,7 +23,7 @@
     display: block;
     width: 100%;
     height: 12px;
-    background-color: var(--light-green);
+    background-color: var(--sun-light-green);
     border-radius: 8px;
 }
 
@@ -130,7 +130,7 @@
     color: var(--white-transparrent-1);
 }
 
-.lessons-btn {
+.lessons-div {
     width: 100%;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -140,7 +140,7 @@
     transition: background-color var(--transition);
 }
 
-.lessons-btn-a {
+.lessons-a {
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -149,23 +149,23 @@
     transition: color var(--transition);
 }
 
-.lessons-list-item:nth-child(odd):hover .lessons-btn,
-.lessons-list-item:nth-child(odd):focus .lessons-btn {
+.lessons-list-item:nth-child(odd):hover .lessons-div,
+.lessons-list-item:nth-child(odd):focus .lessons-div {
     background-color: var(--accent);
 }
 
-.lessons-list-item:nth-child(even) .lessons-btn {
+.lessons-list-item:nth-child(even) .lessons-div {
     border: 1px solid var(--white-transparrent-2);
     background-color: var(--green);
 }
 
-.lessons-list-item:nth-child(even):hover .lessons-btn,
-.lessons-list-item:nth-child(even):focus .lessons-btn {
+.lessons-list-item:nth-child(even):hover .lessons-div,
+.lessons-list-item:nth-child(even):focus .lessons-div {
     background-color: var(--white);
 }
 
-.lessons-list-item:nth-child(even):hover .lessons-btn-a,
-.lessons-list-item:nth-child(even):focus .lessons-btn-a {
+.lessons-list-item:nth-child(even):hover .lessons-a,
+.lessons-list-item:nth-child(even):focus .lessons-a {
     color: var(--green);
 }
 
@@ -222,21 +222,17 @@
         margin-bottom: 32px;
     }
 
-    .lessons-btn {
+    .lessons-div {
         padding-top: 16px;
         padding-bottom: 16px;
-        font-size: 18px;
-        line-height: 1.55;
     }
 
-    .lessons-btn-a {
+    .lessons-a {
+        font-size: 18px;
+        line-height: 1.55;
         font-size: 18px;
         line-height: 1.56;
     }
-
-    /* .head_mod::after {
-        height: 16px;
-    } */
 }
 
 /* ================================== Desktop Style ==================================*/
@@ -255,12 +251,8 @@
         margin-bottom: 16px;
     }
 
-    .lessons-btn {
+    .lessons-div {
         padding-top: 16px;
         padding-bottom: 16px;
     }
-
-    /* .head_mod::after {
-        height: 20px;
-    } */
 }
