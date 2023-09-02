@@ -1,5 +1,7 @@
 /**------------------------------------ Lesson------------------------------------- **/
-
+body {
+    scroll-behavior: smooth;
+}
 /* ================================== Mobile First ==================================*/
 
 .lessons-head {
@@ -134,6 +136,7 @@
     width: 100%;
     padding-top: 14px;
     padding-bottom: 14px;
+    cursor: pointer;
     border-radius: 12px;
     border: none;
     background-color: var(--green);
@@ -149,8 +152,8 @@
     transition: color var(--transition);
 }
 
-.lessons-list-item:nth-child(odd):hover .lessons-div,
-.lessons-list-item:nth-child(odd):focus .lessons-div {
+.lessons-list-item:nth-child(odd) .lessons-div:hover,
+.lessons-list-item:nth-child(odd) .lessons-div:focus {
     background-color: var(--accent);
 }
 
@@ -159,13 +162,13 @@
     background-color: var(--green);
 }
 
-.lessons-list-item:nth-child(even):hover .lessons-div,
-.lessons-list-item:nth-child(even):focus .lessons-div {
+.lessons-list-item:nth-child(even) .lessons-div:hover,
+.lessons-list-item:nth-child(even) .lessons-div:focus {
     background-color: var(--white);
 }
 
-.lessons-list-item:nth-child(even):hover .lessons-a,
-.lessons-list-item:nth-child(even):focus .lessons-a {
+.lessons-list-item:nth-child(even) .lessons-a:hover,
+.lessons-list-item:nth-child(even) .lessons-a:focus {
     color: var(--green);
 }
 
