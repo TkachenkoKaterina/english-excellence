@@ -36,6 +36,7 @@
   text-align: center;
   color: var(--black-transparrent-3);
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
 
   @media screen and (min-width: 768px) {
