@@ -1,6 +1,6 @@
 /* common */
 .title {
-  color: var(--);
+  color: var(--black);
   text-align: center;
   font-size: 32px;
   font-weight: 600;
@@ -46,11 +46,15 @@
   font-weight: 400;
   line-height: 1.71;
   display: block;
-  max-width: 709px;
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
     line-height: 1.67;
+    max-width: 586px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 709px;
   }
 }
 
@@ -79,6 +83,16 @@
   color: inherit;
   text-decoration-line: underline;
   transition: color var(--transition);
+}
+
+.right-side {
+  @media screen and (min-width: 768px) {
+    padding: 0 102px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
 }
 
 .right-side__text-mod:hover,
