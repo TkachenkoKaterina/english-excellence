@@ -38,7 +38,6 @@
     background-color: var(--green);
     padding: 14px 18px;
     gap: 8px;
-    margin-bottom: 20px;
     display: flex;
     align-items: center; 
 }
@@ -78,13 +77,14 @@
 .review-text {
     padding-left: 14px;
     padding-right: 14px;
+    padding-bottom: 40px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .text {
-    margin-bottom: 40px;
     color: var(--black-transparrent-3);
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
@@ -129,7 +129,6 @@
     .student {
         padding: 16px 18px;
         border-radius: 15px;
-        margin-bottom: 32px;
     }
 
     .reviews-list {
@@ -141,6 +140,7 @@
     .review-text {
         padding-left: 16px;
         padding-right: 16px;
+        padding-top: 32px;
     }
 
     .text {
