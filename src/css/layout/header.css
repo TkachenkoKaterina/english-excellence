@@ -39,6 +39,8 @@
   display: block;
   padding: 33px 0;
   position: relative;
+  background-color: transparent;
+  transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-list-link:hover::after {
@@ -85,7 +87,7 @@
 
 .header-social-icon {
   fill: var(--main-cl-black);
-  transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-social-link:hover .header-social-icon,
