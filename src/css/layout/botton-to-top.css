@@ -42,13 +42,14 @@
     height: 48px;
     right: 7%;
   } */
-  animation: changefill 2s forwards infinite ease-out 0.5s;
+  animation: changefill 3s forwards infinite ease-out 0.5s;
 
   &:hover,
   &:focus {
+    background-color: var(--white);
     opacity: 1;
     border: 1px solid #fddadae4;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8); */
     animation: none;
   }
 }
@@ -69,8 +70,8 @@
 }
 
 .btnToTop__icon {
-  width: 53px;
-  height: 65px;
+  /* width: 53px;
+  height: 65px; */
   fill: #ffffff;
   transform: rotate(180deg);
 
@@ -78,6 +79,11 @@
   &:focus {
     fill: #38ae5f;
   }
+}
+
+.btnToTop:hover .btnToTop__icon,
+.btnToTop:hover .btnToTop__icon {
+  fill: #38ae5f;
 }
 
 .hidden-btnToTop {
