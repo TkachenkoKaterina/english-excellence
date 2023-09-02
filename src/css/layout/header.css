@@ -41,15 +41,21 @@
   position: relative;
 }
 
-.header-nav-list-link:hover::after {
+.header-nav-list-link::after {
   display: block;
   width: 37px;
   height: 2px;
-  background-color: var(--green);
+  background-color: transparent;
   content: '';
   position: absolute;
   bottom: 29px;
   left: 0;
+  transition: background-color var(--transition);
+}
+
+.header-nav-list-link:hover::after {
+  background-color: var(--green);
+  content: '';
 }
 
 .header-social-list {
@@ -85,7 +91,7 @@
 
 .header-social-icon {
   fill: var(--main-cl-black);
-  transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-social-link:hover .header-social-icon,
